@@ -1,0 +1,33 @@
+{
+  "name": "website-hiring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenSouth13/Website-Hiring.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/StephenSouth13/Website-Hiring/issues"
+  },
+  "homepage": "https://github.com/StephenSouth13/Website-Hiring#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^17.0.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "googleapis": "^150.0.1",
+    "multer": "^2.0.1",
+    "nodemailer": "^7.0.4",
+    "pg": "^8.16.3"
+  }
+}
