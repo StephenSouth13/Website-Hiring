@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<h1 class="text-3xl font-bold mb-6">Danh sách việc làm</h1>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <% if (jobs.length > 0) { %>
+        <% jobs.forEach(job => { %>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h2 class="text-xl font-bold text-blue-600"><%= job.title %></h2>
+                <p class="text-gray-600 mt-2"><%= job.location %></p>
+                <p class="text-gray-800 my-4 line-clamp-3"><%= job.description %></p>
+                <a href="/jobs/<%= job.id %>" class="text-blue-500 hover:underline font-semibold">Xem chi tiết →</a>
+            </div>
+        <% }) %>
+    <% } else { %>
+        <p>Hiện chưa có tin tuyển dụng nào.</p>
+    <% } %>
+</div>
+
+<%- include('../partials/footer') %>
